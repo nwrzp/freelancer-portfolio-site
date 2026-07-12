@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>др 31.07.2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container">
+        <p>мяу?</p>
+    </div>
+
+    <!-- СТРАНИЦА 1: Приветствие -->
+    <div id="page1" onclick="showModel()">
+        <h1>здаров, именинник)</h1>
+        <p>тап зе гласс))</p>
+    </div>
+
+    <!-- СТРАНИЦА 2: 3D модель -->
+    <div id="page2">
+        <div id="canvas-container"></div>
+    </div>
+    
+
+
+
+    <!-- Ваш скрипт будет здесь -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.163.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.163.0/examples/jsm/"
+            }
+        }
+    </script>
+    <!-- <script type="module">
+        // Адаптация размера
+        window.addEventListener('resize', () => {
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        });
+    </script> -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
